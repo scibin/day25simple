@@ -1,0 +1,9 @@
+{{#each articles}}
+    <h2>{{ this.title }}</h2>
+    <h5>By <em>{{ this.email }}</em></h5>
+    <h5>Posted <em>{{ this.posted }}</em></h5>
+    <div>
+        <img src='https://abc1234.sgp1.digitaloceanspaces.com/articles/{{ this.image_url }}'>
+    </div>
+    <p>{{ this.article }}</p>
+{{/each}}
