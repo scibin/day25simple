@@ -1,24 +1,20 @@
 language: node_js
-
 node_js:
-  - node
-
+- node
 dist: bionic
 sudo: required
-
 branches:
   only:
   - master
-
+  - branchedaway
 before_script:
-  - npm install
-
+- npm install
 script: 'true'
-
 deploy:
   provider: heroku
   api_key:
-    secure: "API_KEY_HEREEEEEEEEEEEEE"
+    secure: nCuTIc+QcKlKR0/nBQnua/DuukvfpKVvY3Ydz72kOFrkrs0Bg38pkXuIQJIbrhEIq73mKR+e3BQd+Q15MOql0gMX1U9e5i1fRnXoE5qeoc5B3BcH3Zy4ZXPQzE8I8u64X8/xdI9NXDAEeTegAo3EVNNjue59JsFM7KC+gtwSJOI27/rlXguIOefcEbkZOoZDX8B5b38cITJtkEM2KHr7PzkJP8LSKPxybD3lAWd1xyeEkUUIQtg57m184wiyX9zwvTS95PFP8xmGU+/J8O7NetAO0DBD239nGWunTvMiXBetAo9YMqKmDnnhA3NPbWqQbmHJfGM7noHVNnDt/YvvrUB/DwwQhhpw1jonet2c7WLWDYIiJXX9LCBuyhWRFKN1O2qLsz8EzXpnjO/CBif/W9LZBNVPcXon/3bRmjj0MmXjIP2WVfs3IthSLJujgAEoB32RJ00gbN/zBpf5Wz13v2dSHjfsqSG40qZiu7U5KlOaleJdReANjLmcgPMoQ46wcmVFl2nUkvqoYrDh81t8LWYCdqyiwHC0pJ45toeOxUu/kHUCpliHfjrAX//9/RZRAT9z5HHVUU1HAp89K2hCDOJ2hxXCD5CqDx8ASeBIVzJQLi4WnFfuPhydeJpn/Grl3BmZoG4DCUdMTZ0yif1vjrlS7csoApTsU2ZnxI4gAz4=
+  app: day25simple
   skip_cleanup: true
   on:
     branch: branchedaway
