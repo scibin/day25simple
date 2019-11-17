@@ -1,0 +1,24 @@
+language: node_js
+
+node_js:
+  - node
+
+dist: bionic
+sudo: required
+
+branches:
+  only:
+  - master
+
+before_script:
+  - npm install
+
+script: 'true'
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "API_KEY_HEREEEEEEEEEEEEE"
+  skip_cleanup: true
+  on:
+    branch: branchedaway
