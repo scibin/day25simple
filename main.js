@@ -46,8 +46,8 @@ if (fs.existsSync(s3ConfigPath)) {
     s3Config = require(s3ConfigPath);
 } else {
     s3Config = {
-        accessKey: process.env.S3_ACCESS_KEY,
-        secretKey: process.env.S3_SECRET_KEY
+        accessKeyId: process.env.S3_ACCESS_KEY,
+        secretAccessKey: process.env.S3_SECRET_KEY
     }
 }
 
